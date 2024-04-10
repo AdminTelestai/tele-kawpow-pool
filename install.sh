@@ -35,21 +35,12 @@ source ~/.bashrc
 sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 nvm install v8.1.4
 nvm use v8.1.4
-npm update -g
-
-npm install -g webpack@4.29.3 pm2@4.2.1
-npm install -g npm@latest
-
 npm install
-npm update
-npm audit fix
-npm install sha3
-npm install logger
 
-#./start-pool.sh
-
+echo ""
 echo "Installation completed!"
 
 exit 0
